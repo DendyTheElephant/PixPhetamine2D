@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="code\src\CTimer.cpp" />
+    <ClCompile Include="code\src\LowLevelRenderingWrapper.cpp" />
+    <ClCompile Include="code\src\UErrorHandler.cpp" />
+    <ClCompile Include="code\src\FDisplay.cpp">
+      <Filter>Sources\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CCamera.cpp">
+      <Filter>Sources\SceneRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CFrameBuffer.cpp">
+      <Filter>Sources\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CPostProcessPass.cpp">
+      <Filter>Sources\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CShader.cpp">
+      <Filter>Sources\LowLevelWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CSkyboxTexture.cpp">
+      <Filter>Sources\LowLevelWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CTexture.cpp">
+      <Filter>Sources\LowLevelWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\FBasicMeshes.cpp">
+      <Filter>Sources\LowLevelWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="code\main.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\SMeshQuad.cpp">
+      <Filter>Sources\LowLevelWrapper</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\UCoreEngine.cpp">
+      <Filter>Sources\SceneRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CSkybox.cpp">
+      <Filter>Sources\SceneRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="code\src\CStaticMesh.cpp">
+      <Filter>Sources\LowLevelWrapper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\hdr\CTimer.h" />
+    <ClInclude Include="code\hdr\LowLevelRenderingWrapper.h" />
+    <ClInclude Include="code\hdr\UErrorHandler.h" />
+    <ClInclude Include="code\hdr\VSingleton.h" />
+    <ClInclude Include="code\hdr\CCamera.h">
+      <Filter>Headers\SceneRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\CFrameBuffer.h">
+      <Filter>Headers\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\FDisplay.h">
+      <Filter>Headers\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\CPostProcessPass.h">
+      <Filter>Headers\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\CShader.h">
+      <Filter>Headers\LowLevelWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\CSkyboxTexture.h">
+      <Filter>Headers\LowLevelWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\CTexture.h">
+      <Filter>Headers\LowLevelWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\FBasicMeshes.h">
+      <Filter>Headers\LowLevelWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\HConstants.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\SMeshQuad.h">
+      <Filter>Headers\LowLevelWrapper</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\UCoreEngine.h">
+      <Filter>Headers\SceneRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\CSkybox.h">
+      <Filter>Headers\SceneRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="code\hdr\CStaticMesh.h">
+      <Filter>Headers\LowLevelWrapper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{e4ba2894-8a99-4ec0-9c6f-06131b08c698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources">
+      <UniqueIdentifier>{4dcaa181-0e57-44cb-94bd-976b8c9872a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Display">
+      <UniqueIdentifier>{8abfac06-5e23-4914-8c53-57922a7ac0ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\LowLevelWrapper">
+      <UniqueIdentifier>{5b642195-051f-4cac-8811-a84156e9a95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\PostProcess">
+      <UniqueIdentifier>{99429cd6-308a-4e4e-bf39-c4215328eaa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\SceneRendering">
+      <UniqueIdentifier>{21f8f10d-4d76-4539-8a26-9e8d6be67811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Display">
+      <UniqueIdentifier>{b4b9b061-c2c0-4240-b7d0-01d0f61266ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\LowLevelWrapper">
+      <UniqueIdentifier>{a3894c98-118a-4e19-a93b-fa892b39250e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\SceneRendering">
+      <UniqueIdentifier>{95d38833-89e0-43b6-afb9-60f7ca1f8dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\PostProcess">
+      <UniqueIdentifier>{ad196d08-32bb-4688-9164-3794c85bb1bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

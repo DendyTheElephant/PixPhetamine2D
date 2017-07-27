@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{ae904868-9f62-4688-b8f1-f2b024dcfe32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{553af199-0757-4536-8a0f-60e197bf9364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\H">
+      <UniqueIdentifier>{e991af49-8e9d-47ca-b87d-7bfafa72f4ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO\CPP">
+      <UniqueIdentifier>{6b62d584-1e6a-40d6-b116-9453af9ac860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\H">
+      <UniqueIdentifier>{5db56851-7144-4eca-a462-6756ef0f5bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry\CPP">
+      <UniqueIdentifier>{3f55b906-92eb-402d-b89f-680b45cda2a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="H">
+      <UniqueIdentifier>{cf18b337-a509-4835-9ea5-76f18732b2c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CPP">
+      <UniqueIdentifier>{db2684aa-ebb6-4dce-947a-41b44ddff407}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="code\headers\FGeometry.h">
+      <Filter>Geometry\H</Filter>
+    </ClInclude>
+    <ClInclude Include="code\headers\DBasicTypes.h">
+      <Filter>H</Filter>
+    </ClInclude>
+    <ClInclude Include="code\headers\DBasicGeometryTypes.h">
+      <Filter>Geometry\H</Filter>
+    </ClInclude>
+    <ClInclude Include="code\headers\CIniFileReader.h">
+      <Filter>IO\H</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="code\sources\FGeometry.cpp">
+      <Filter>Geometry\CPP</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
