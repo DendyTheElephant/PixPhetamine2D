@@ -15,6 +15,7 @@
 #include <vector>
 #include <memory>
 #include <map>
+#include <sstream>
 
 //// ---- Namespaces ---- ////
 ///* Substitution Aliases */
@@ -33,8 +34,8 @@ template<class T, class U>
 using pxMap = std::map<T, U>;
 template<class T>
 using pxVec = std::vector<T>;
-template<class T>
-using pxPair = std::pair<T>;
+template<class T, class U>
+using pxPair = std::pair<T,U>;
 template<class T>
 using pxUniquePtr = std::unique_ptr<T>;
 template<class T>
@@ -56,6 +57,6 @@ template<class T>
 T lexical_cast(pxString const& a_string) {
 	std::stringstream ss(a_string);
 	T result;
-	ss >> result
+	ss >> result;
 	return result;
 }

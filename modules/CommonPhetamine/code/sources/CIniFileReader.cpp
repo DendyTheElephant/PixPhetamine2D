@@ -5,16 +5,6 @@ namespace CommonPhetamine {
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		////  ================================================================================================================================  ////
-		////    ---- Internal methods -----                                                                                                     ////
-		////  ================================================================================================================================  ////
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-		//----------------------------------------------------------------------------------------------------------------------------------------//
-		///
-		//----------------------------------------------------------------------------------------------------------------------------------------//
-
-		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		////  ================================================================================================================================  ////
 		////    ---- Constructor/Destructor -----                                                                                               ////
 		////  ================================================================================================================================  ////
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -25,7 +15,6 @@ namespace CommonPhetamine {
 		CIniFileReader::CIniFileReader(pxString a_iniFilePath) {
 			parse(a_iniFilePath);
 		}
-
 
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		////  ================================================================================================================================  ////
@@ -78,23 +67,23 @@ namespace CommonPhetamine {
 						value = line.substr(separator + 1, line.length() - 1 - separator);
 
 						if (is_lexically_castable<pxInt>(value)) { // If castable into int
-							m_intEntriesMap[pxPair<pxString>(currentSection, key)] = lexical_cast<pxInt>(value); // Add as int
+							m_intEntriesMap[pxPair<pxString,pxString>(currentSection, key)] = lexical_cast<pxInt>(value); // Add as int
 							if (value == "0") // If in boolean it means something ... eg only 0 or 1!!!
-								m_boolEntriesMap[pxPair<pxString>(currentSection, key)] = false; // Add as False
+								m_boolEntriesMap[pxPair<pxString,pxString>(currentSection, key)] = false; // Add as False
 							else if (value == "1")
-								m_boolEntriesMap[pxPair<pxString>(currentSection, key)] = true; // Add as False
+								m_boolEntriesMap[pxPair<pxString,pxString>(currentSection, key)] = true; // Add as False
 						}
 							
 						if (is_lexically_castable<pxFloat>(value)) // If castable as float
-							m_floatEntriesMap[pxPair<pxString>(currentSection, key)] = lexical_cast<pxFloat>(value); // Add as float
+							m_floatEntriesMap[pxPair<pxString,pxString>(currentSection, key)] = lexical_cast<pxFloat>(value); // Add as float
 						
 						if (value == "yes")
-							m_boolEntriesMap[pxPair<pxString>(currentSection, key)] = true;
+							m_boolEntriesMap[pxPair<pxString,pxString>(currentSection, key)] = true;
 						if (value == "no")
-							m_boolEntriesMap[pxPair<pxString>(currentSection, key)] = false;
+							m_boolEntriesMap[pxPair<pxString,pxString>(currentSection, key)] = false;
 
 						// Whatever, add as string!
-						m_stringEntriesMap[pxPair<pxString>(currentSection, key)] = value;
+						m_stringEntriesMap[pxPair<pxString,pxString>(currentSection, key)] = value;
 					}
 				}
 			}
